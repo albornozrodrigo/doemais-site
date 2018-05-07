@@ -1,0 +1,83 @@
+input:-webkit-autofill {
+	box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.valign-wrapper {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	display: block;
+	max-width: 100px;
+	margin: 32px auto;
+}
+
+.navbar-brand {
+	.logo {
+		max-height: 35px;
+		margin: 0;
+	}
+}
+
+.bg-header {
+	background-image: url("../img/bg-home.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bg-secondary {
+	background-color: $secondary;
+}
+
+.signup-form {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.intro {
+	color: #fff;
+	width: 100%;
+	margin: 0 auto;
+
+	.intro-title {
+		font-size: 28px;
+		margin-top: 140px;
+	}
+	.intro-text {
+		text-align: justify;
+	}
+	.intro-btn {
+		margin-bottom: 50px;
+	}
+	.intro-device-mockup {
+		max-width: 250px;
+	}
+}
+
+.box {
+	&-stores {
+		color: $white;
+		background-color: #00aa9d;
+		text-align: center;
+		.box-title {
+			font-size: 50px;
+		}
+		.box-text {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		.badges {
+			margin-top: 40px;
+			.badge-link {
+				min-width: 135px;
+				display: inline-block;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
