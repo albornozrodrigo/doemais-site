@@ -10,9 +10,9 @@
 
 		<title>Doe+</title>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#navbar" data-offset="0">
 		<div id="wrapper">
-			<nav class="navbar fixed-top navbar-dark bg-danger navbar-expand-md">
+			<nav id="navbar" class="navbar fixed-top navbar-dark bg-danger navbar-expand-md">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">
 						<img src="assets/img/logo.png" class="logo img-fluid" />
@@ -23,33 +23,94 @@
 					<div class="collapse navbar-collapse justify-content-end" id="menu">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">Contato</a>
+								<a class="nav-link" href="#intro">Início</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">Contato</a>
+								<a class="nav-link" href="#statistics">Estatísticas</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#stores">Download</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contato</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<header class="bg-header">
+
+			<header id="intro" class="bg-header">
 				<div class="container">
 					<div class="valign-wrapper">
 						<div class="intro">
 							<div class="row">
 								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-									<h1 class="intro-title">Lorem ipsum dolor sit amet</h1>
-									<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-									<a href="index.html" class="btn btn-light btn-block intro-btn float-right">Saiba mais</a>
+									<div class="animated fadeInLeft">
+										<h1 class="intro-title">Lorem ipsum dolor sit amet</h1>
+										<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+										<a href="index.html" class="btn btn-lg btn-outline-light intro-btn float-right">Saiba mais</a>
+									</div>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-									<img src="assets/img/device-mockup.png" class="img-fluid intro-device-mockup" />
+									<img src="assets/img/device-mockup.png" class="img-fluid intro-device-mockup animated fadeInRight" />
 								</div>
 							</div>
 						</div>
-						<!-- <form class="card signup-form" method="POST" action="#" autocomplete="off">
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section id="statistics" class="box box-statistics">
+					<div class="valign-wrapper">
+						<div class="container">
+							<h2 class="box-title">O cenário atual</h2>
+							<p class="box-text">
+								O Brasil precisa de <strong>4,15 milhões de doadores de sangue</strong><br/>
+								nas redes privada e pública para esse ideal ser alcançado.
+							</p>
+							<br/>
+							<div class="row text-center">
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+									<div class="statistic">
+										<img src="assets/img/01.jpg" class="img-fluid" />
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+									<div class="statistic">
+										<img src="assets/img/02.jpg" class="img-fluid" />
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+									<div class="statistic">
+										<img src="assets/img/03.jpg" class="img-fluid" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="stores" class="box box-stores">
+					<div class="valign-wrapper">
+						<div class="container">
+							<h2 class="box-title">Lorem ipsum dolor sit amet</h2>
+							<p class="box-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							<div class="badges">
+								<a class="badge-link" href="#"><img src="assets/img/google-play-badge.svg" class="img-fluid" alt=""></a>
+								<a class="badge-link" href="#"><img src="assets/img/app-store-badge.svg" class="img-fluid" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer id="contact" class="bg-header">
+				<div class="container">
+					<div class="valign-wrapper">
+						<form class="card contact-form" method="POST" action="#" autocomplete="off">
 							<div class="card-body">
-								<h4 class="text-center">Faça seu pré-cadastro e prepare-se para salvar vidas.</h4>
+								<h4 class="text-center">Entre em contato conosco!</h4>
 								<br/>
 								<div class="form-group">
 									<label for="name">Nome</label>
@@ -61,45 +122,44 @@
 									<input type="email" name="email" class="form-control" id="email" placeholder="Digite seu email" required />
 								</div>
 
+								<div class="form-group">
+									<label for="subject">Assunto</label>
+									<input type="text" name="subject" class="form-control" id="subject" placeholder="Digite o assunto" required />
+								</div>
+
+								<div class="form-group">
+									<label for="message">Mensagem</label>
+									<textarea rows="4" type="text" name="message" class="form-control" id="message" placeholder="Digite o assunto" required></textarea>
+								</div>
+
 								<div class="form-group form-check">
 									<input name="opt_in" type="checkbox" checked="true" class="form-check-input" id="opt_in">
 									<label class="form-check-label" for="opt_in">Aceito receber informações do site e de parceiros.</label>
 								</div>
 								<button type="submit" class="btn btn-block btn-danger">Enviar</button>
 							</div>
-						</form> -->
+						</form>
 					</div>
 				</div>
-			</header>
+			</footer>
 		</div>
-
-		<section class="box box-statistics bg-secondary">
-			<div class="valign-wrapper">
-				<div class="container">
-					<h2 class="box-title">Lorem ipsum dolor sit amet</h2>
-					<p class="box-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					<img src="assets/img/solucao.png" class="img-fluid" />
-				</div>
-			</div>
-		</section>
-
-		<section class="box box-stores">
-			<div class="valign-wrapper">
-				<div class="container">
-					<h2 class="box-title">Lorem ipsum dolor sit amet</h2>
-					<p class="box-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					<div class="badges">
-						<a class="badge-link" href="#"><img src="assets/img/google-play-badge.svg" class="img-fluid" alt=""></a>
-						<a class="badge-link" href="#"><img src="assets/img/app-store-badge.svg" class="img-fluid" alt=""></a>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+		<script>
+			document.querySelector("#statistics .row").onmouseenter = function() {
+				this.classList.add('animated', 'pulse');
+			};
+
+			document.querySelector("#statistics .row").onmouseleave = function() {
+				setTimeout(function() {
+					this.classList.remove('animated', 'pulse');
+				}, 1000);
+			};
+		</script>
 	</body>
 </html>
