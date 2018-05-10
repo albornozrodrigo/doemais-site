@@ -1,3 +1,11 @@
+body {
+	overflow-x: hidden;
+}
+
+#wrapper {
+	padding-top: 60px;
+}
+
 input:-webkit-autofill {
 	box-shadow: 0 0 0 1000px white inset !important;
 }
@@ -61,6 +69,7 @@ input:-webkit-autofill {
 	}
 	.intro-device-mockup {
 		max-width: 250px;
+		max-height: 450px;
 	}
 }
 
@@ -151,4 +160,8 @@ input:-webkit-autofill {
 			}
 		}
 	}
+}
+
+#contact {
+	padding: 50px 0;
 }
