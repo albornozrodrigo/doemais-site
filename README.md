@@ -35,7 +35,7 @@ npm i
 
 Para acessar o projeto basta testar.
 ```
-http://localhost:8080
+http://localhost:8080 ou https://doemais-site-api.herokuapp.com/
 ```
 
 ### Páginas
