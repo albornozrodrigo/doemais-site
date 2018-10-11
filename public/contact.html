@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <title>Doe+</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav id="navbar" class="navbar fixed-top navbar-transparent navbar-expand-md">
+            <div class="container">
+                <div class="circle"></div>
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo.png" class="logo img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/statistics.html">Dados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/partner.html">Seja parceiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chatbot.html">IA (ChatBot)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section id="how-to" class="box box-internal">
+                <div class="valign-wrapper">
+                    <div class="container">
+                        <h2 class="box-title text-center animated fadeInDown">Entre em contato conosco!</h2>
+                        <form id="contact-form" class="contact-form animated fadeInUp" method="POST" autocomplete="off">
+                            <div class="errors"></div>
+
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Digite seu nome"
+                                    autocomplete="off" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu email"
+                                    autocomplete="off" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Digite o assunto"
+                                    autocomplete="off" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea rows="2" type="text" name="message" class="form-control" id="message"
+                                    placeholder="Digite o assunto" required></textarea>
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input name="opt_in" type="checkbox" checked="true" class="form-check-input" id="opt_in">
+                                <label class="form-check-label" for="opt_in">Aceito receber informações do site e de
+                                    parceiros.</label>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-danger">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <h2>Faça o download do aplicativo e comece agora mesmo a fazer a diferença</h2>
+                <br /><br />
+                <img src="assets/img/btn-download.png" class="img-fluid" />
+                <br /><br /><br /><br />
+                <p><a href="/privacy-policy.html">Política de Privacidade</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/scripts.min.js"></script>
+</body>
+
+</html>
