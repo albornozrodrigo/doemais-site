@@ -17,12 +17,21 @@ gulp.task('watch-dev', ['sass', 'js', 'copy-files'], function () {
 	gulp.watch('./src/**/*.*', ['sass', 'js', 'copy-files']);
 });
 
-gulp.task('copy-files', function () {
+gulp.task('copy-js-files', function () {
 	return gulp.src([
 		'./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+		'./node_modules/jquery-validation/dist/jquery.validate.min.js',
+		'./node_modules/jquery-validation/dist/additional-methods.min.js',
 		'./node_modules/jquery/dist/jquery.min.js'
 	])
 		.pipe(gulp.dest('./public/assets/js/'));
+});
+
+gulp.task('copy-css-files', function () {
+	return gulp.src([
+		'./node_modules/animate.css/animate.css'
+	])
+		.pipe(gulp.dest('./public/assets/css/'));
 });
 
 gulp.task('js', function () {
@@ -33,6 +42,6 @@ gulp.task('js', function () {
 });
 
 gulp.task('default', function (done) {
-	gulp.start('sass', 'js', 'copy-files')
+	gulp.start('sass', 'js', 'copy-js-files', 'copy-css-files')
 		.on('end', done);
 });

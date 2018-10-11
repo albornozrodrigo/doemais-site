@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
 	console.log('doemais');
 
 	if (window.location.pathname !== '/') {
@@ -9,9 +9,45 @@ $(document).ready(function () {
 		});
 	}
 
-	$("#contact-form").submit(function (e) {
+	$('#contact-form').submit(function (e) {
 		window.location.href = '/thanks.html';
+		return false;
+	});
 
-		e.preventDefault();
+	$('#contact-form').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			email: {
+				required: true
+			},
+			telephone: {
+				required: true
+			},
+			subject: {
+				required: true
+			},
+			message: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: "Este campo é obrigatório."
+			},
+			email: {
+				required: "Este campo é obrigatório."
+			},
+			telephone: {
+				required: "Este campo é obrigatório."
+			},
+			subject: {
+				required: "Este campo é obrigatório."
+			},
+			message: {
+				required: "Este campo é obrigatório."
+			}
+		}
 	});
 });
